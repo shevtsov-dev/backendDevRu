@@ -18,6 +18,7 @@ import {
   YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import {TelegramIcon} from "@/components/icons/TelegramIcon";
 
 export const RESUME_DATA = {
   name: "Роман Шевцов",
@@ -53,6 +54,11 @@ export const RESUME_DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/roman-shevtsov-8a416b1b2/",
         icon: LinkedInIcon,
+      },
+      {
+        name: "Telegram",
+        url: "https://t.me/WebDevRamirez",
+        icon: TelegramIcon,
       },
       /*{
         name: "X",
