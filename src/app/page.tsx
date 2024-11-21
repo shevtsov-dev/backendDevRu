@@ -99,14 +99,14 @@ export default function Page() {
             {RESUME_DATA.summary}
           </p>
         </Section>
-        {/*Качества*/}
+        {/*Навыки*/}
         <Section>
-          <h2 className="text-xl font-bold">Качества</h2>
+          <h2 className="text-xl font-bold">Навыки</h2>
           <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.qualities.map((qualitie) => {
+            {RESUME_DATA.skills.map((skill) => {
               return (
-                  <Badge className="print:text-[10px]" key={qualitie}>
-                    {qualitie}
+                  <Badge className="print:text-[10px]" key={skill}>
+                    {skill}
                   </Badge>
               );
             })}
@@ -138,7 +138,11 @@ export default function Page() {
                       </span>
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
-                      {work.start} - {work.end ?? "по настоящее время"}
+                      {/*if({work.end} === {work.start}) {
+                      work.end
+                    } else {work.start} - {work.end ?? "по настоящее время"}*/}
+                      {/*{work.start} - {work.end ?? "по настоящее время"}*/}
+                      {work.start}
                     </div>
                   </div>
 
@@ -176,15 +180,15 @@ export default function Page() {
             );
           })}
         </Section>
-        {/*Навыки*/}
+        {/*Качества*/}
         <Section>
-          <h2 className="text-xl font-bold">Навыки</h2>
+          <h2 className="text-xl font-bold">Качества</h2>
           <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
+            {RESUME_DATA.qualities.map((qualitie) => {
               return (
-                <Badge className="print:text-[10px]" key={skill}>
-                  {skill}
-                </Badge>
+                  <Badge className="print:text-[10px]" key={qualitie}>
+                    {qualitie}
+                  </Badge>
               );
             })}
           </div>
@@ -198,7 +202,7 @@ export default function Page() {
         </Section>
         {/*Курсы*/}
         <Section>
-          <h2 className="text-xl font-bold">Курсы</h2>
+          <h2 className="text-xl font-bold">Обучение</h2>
           {RESUME_DATA.courses.map((courses) => {
             return (
                 <Card key={courses.course}>

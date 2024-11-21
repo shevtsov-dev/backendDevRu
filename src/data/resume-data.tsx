@@ -83,13 +83,33 @@ export const RESUME_DATA = {
   ],
   courses: [
     {
-      course: "Laravel",
+      course: "Data Engineer",
+      degree: "Aston",
+      date: "2024",
+    },
+    {
+      course: "Python - Полное руководство",
+      degree: "Udemy",
+      date: "2024",
+    },
+    {
+      course: "SQL - Продвинутый курс",
       degree: "Udemy",
       date: "2024",
     },
     {
       course: "React - Полный курс",
       degree: "Udemy",
+      date: "2024",
+    },
+    {
+      course: "Laravel",
+      degree: "Udemy",
+      date: "2024",
+    },
+    {
+      course: "SQL",
+      degree: "SQL Academy",
       date: "2024",
     },
     {
